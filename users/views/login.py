@@ -11,6 +11,6 @@ def login_user(request):
         if user is not None:
             login(request, user)
                 # Redirect to a success page.
-            return redirect('chat_index')
+            return redirect('conversation')
         
     return render(request, 'home/login.html')
